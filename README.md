@@ -7,4 +7,4 @@ Simply open `R2D2.xcodeproj` with Xcode and run on your device.
 
 Closer droids (RSSI value closer to 0) will appear higher up in the Table View.
 
-![Table View][https://github.com/josephcappadona/sphero-r2d2-iOS/blob/master/screenshot.PNG]
+![Table View][../master/screenshot.PNG]
