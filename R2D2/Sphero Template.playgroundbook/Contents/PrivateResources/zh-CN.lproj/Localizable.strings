@@ -1,0 +1,267 @@
+/* aiming modal accessibility. */
+"aiming.bodyLabel.accessibilityLabel" = "如果你瞄准 %@ 有困难，点按“就绪”。感觉一下它朝哪个方向滚动。尾光朝向与滚动相反的方向。";
+
+/* body text for aiming, turn Sphero until its small blue taillight is facing the user, \n newline for separating the two strings */
+"aiming.bodyLabel.text" = "请确保蓝色尾光朝向你！";
+
+/* accessibility hint describing what the ready button does. */
+"aiming.readyButton.accessibilityHint" = "关闭瞄准弹出窗口，并开始运行你的代码。";
+
+/* button title; finished aiming and ready to run program. */
+"aiming.readyButton.text" = "就绪";
+
+/* aiming image accessiblity, image shows a small Sphero with a blue tail light facing away from an arrow and towards a pair of shoes */
+"aiming.spheroImage.accessibility" = "鞋子位于 %@ 后面，其蓝色尾光亮起。尾光朝向鞋子，背向箭头，指示其滚动方向。";
+
+/* title label for aiming */
+"aiming.titleLabel.text" = "瞄准 %@";
+
+/* VoiceOver description of a circular aiming control, used to rotate their toy. */
+"aimingView.accessibilityDescription" = "瞄准控件。更改你的机器人的基点前进方向。";
+
+/* Assessment hint when the toy disconnects unexpectedly while code is running. */
+"asessment.unexpectedDisconnect" = "R2-D2 已断开连接！请连接 R2-D2 并运行你的代码来再试一次。";
+
+/* Instructions to update firmware */
+"connection.firmware.instructions" = "下载[Sphero星球大战应用]（x-playgrounds-launch-app://com.sphero.starwars?iTunesID=1243140524）并连接你的机器人来进行固件更新。";
+
+/* Instructions to update firmware */
+"connection.firmware.instructionsRobot" = "下载[Sphero Edu 应用]（x-playgrounds-launch-app://com.sphero.sprk?iTunesID=1017847674）并连接你的机器人来进行固件更新。";
+
+/* Connection view state -- connecting */
+"connection.view.connecting" = "正在连接机器人";
+
+/* Connection view state -- Robot cannot be used */
+"connection.view.firmwareoutofdate" = "连接至不同的机器人";
+
+/* Connection view state -- not connected */
+"connection.view.noConnection" = "连接机器人";
+
+/* Connection view state -- searching for robots */
+"connection.view.searching" = "正在搜索机器人";
+
+/* Connection view state -- selecting a robot */
+"connection.view.selecting" = "选择一个机器人";
+
+/* Name of unknown robot type */
+"connection.view.unknown" = "???";
+
+/* The first %@ is replaced with the type of toy (SPRK+, BB-8, R2-D2). The 2nd %@ is replaced with a command (setMainLed etc.). */
+"contentHelpers.unsupportedToyCommand" = "%1$@不支持%2$@命令。";
+
+/* '%@ is replaced with direction. ie Stormtrooper left can see R2D2. Sentence is brief as it is being read by voice over during gameplay */
+"deathStar.accessibility.detectedByStormtrooper" = "%@的冲锋队可以看到 R2D2";
+
+/* %@ is replaced with a list of directions in which R2-D2 can move. */
+"deathStar.accessibility.movementDirectionList" = "可以向%@移动";
+
+/* %@ is replaced with a direction (Left, Right, Forward, etc). \"Progress\" as in progress through the death star. */
+"deathStar.accessibility.progressThroughMazeDirection" = "向%@移动以行进";
+
+/* No comment provided by engineer. */
+"deathStar.accessibility.r2d2Captured" = "R2D2 被冲锋队所俘。";
+
+/* No comment provided by engineer. */
+"deathStar.accessibility.r2d2NearDoor" = "R2D2 在一扇门附近。停止移动来解锁门。";
+
+/* death star accessibility string. Description on how to control R2-d2 */
+"deathStar.accessibility.sceneDescription" = "R2D2 位于死星。连按两次，按住，然后滑动手指来控制 R2D2。";
+
+/* No comment provided by engineer. */
+"deathStar.accessibility.stopDescription" = "停止";
+
+/* %@ is replaced with a direction (Forward, Left, etc), %d is replaced with a number. */
+"deathStar.accessibility.stormtrooperNearby" = "冲锋队位于%1$@，距离为 %2$d。";
+
+/* ### is bold indicator, [] indicator that the text will be hyper linked, @(next) is URL link that is applied to [next page], localize 'Congratulations! \nYou successfully made it through this part of the Death Star!\nOn to the [next page]' */
+"deathStarMovement.assessment.pass" = "### 恭喜！\n你成功通过了*死星*的这一部分！\n移至[下一页](@next)！";
+
+/* final mission accessibility, image is of r2d2 rolling up the space ship's ramp to escape from the death star. */
+"finalMission.accessibility.label" = "R2D2 沿着舷梯滚向千年隼号以逃离死星。";
+
+/* instructions for firmware update */
+"firmware.moreInfoLabel.text" = "点按以了解更多信息";
+
+/* firmware update. toy needs an update */
+"firmwareUpdate.bodyLabel.bb8Text" = "BB-8 需要更新";
+
+/* firmware update. toy needs an update */
+"firmwareUpdate.bodyLabel.bb9eText" = "BB-9E 需要更新";
+
+/* firmware update. toy needs an update */
+"firmwareUpdate.bodyLabel.r2Text" = "R2-D2 需要更新";
+
+/* firmware update. toy needs an update */
+"firmwareUpdate.bodyLabel.sprkText" = "SPRK+ 需要更新";
+
+/* firmware update. toy needs an update */
+"firmwareUpdate.bodyLabel.boltText" = "BOLT 需要更新";
+
+/* firmware update. toy needs an update */
+"firmwareUpdate.bodyLabel.miniText" = "Mini 需要更新";
+
+/* accessibility for BB-8 firmware update */
+"firmwareUpdate.image.bb8Accessibility" = "BB-8 机器人需要更新。指向屏幕右上方的箭头表示应在哪里点按。";
+
+/* accessibility for bb9e firmware update */
+"firmwareUpdate.image.bb9eAccessibility" = "BB9E 机器人需要更新指向屏幕右上方的箭头表示应在哪里点按。";
+
+/* accessibility for r2d2 firmware update */
+"firmwareUpdate.image.r2Accessibility" = "R2D2 机器人需要更新指向屏幕右上方的箭头表示应在哪里点按。";
+
+/* accessibility for sprk+ firmware update */
+"firmwareUpdate.image.sprkAccessibility" = "悲伤的 Sphero 机器人有一个下垂的天线。机器人需要更新。指向屏幕右上方的箭头表示应在哪里点按。";
+
+/* hacking screen, image accessibility. image is of r2-d2 in front of a blast door. */
+"hacking.accessibility.label" = "R2D2 位于死星的防爆门前面并试图破解通行码来打开门。";
+
+/* image accessibility, image is of R2-D2 in a desert canyon. */
+"headSwivel.accessibility.text" = "R2D2 位于一个沙漠大峡谷。";
+
+/* VoiceOver description of a joystick. */
+"joystickView.accessibilityDescription" = "操纵杆。连按两次并按住来驾驭你的机器人。";
+
+/* image accessibility, image is of R2-D2 projecting a hologram of princess Leia */
+"lights.accessibility.image" = "R2D2 在 Obi-Wan Kenobi 的房子里投射 Leia 公主的全息影像。";
+
+/* movement screen, image accessibility. image is of r2-d2 in a hanger bay by the Millennium Falcon. */
+"movement.accessibility.label" = "R2D2 位于千年隼号前方的机库。";
+
+/* Accessibility hint for R2D2 image in R2D2 simulator. */
+"R2Simulator_AccessibilitySpheroHint" = "R2D2";
+
+/* image accessibility for the roll screen */
+"roll.accessibility.label" = "R2D2 站在一扇门前面的过道准备滚离。";
+
+/* scanning screen, image accessibility. image is of r2-d2 with its life form scanner (antenna from its dome) out. */
+"scanning.accessibility.label" = "R2D2 在死星的一个过道里来回旋转它的生命扫描器以扫描冲锋队。";
+
+/* VoiceOver description of Sphero simulator. */
+"SpheroSimulator_AccessibilityDescription" = "模拟你命令 Sphero 四处滚动。";
+
+/* VoiceOver description for Sphero heading Backward */
+"SpheroSimulator_AngleDescription_Backward" = "后退";
+
+/* VoiceOver description for Sphero heading Backward Left */
+"SpheroSimulator_AngleDescription_BackwardLeft" = "左后方";
+
+/* VoiceOver description for Sphero heading Backward Right */
+"SpheroSimulator_AngleDescription_BackwardRight" = "右后方";
+
+/* VoiceOver description for Sphero heading Forward */
+"SpheroSimulator_AngleDescription_Forward" = "前进";
+
+/* VoiceOver description for Sphero heading Forward Left */
+"SpheroSimulator_AngleDescription_ForwardLeft" = "左前方";
+
+/* VoiceOver description for Sphero heading Forward Right */
+"SpheroSimulator_AngleDescription_ForwardRight" = "右前方";
+
+/* VoiceOver description for Sphero heading Left */
+"SpheroSimulator_AngleDescription_Left" = "左方";
+
+/* VoiceOver description for Sphero heading Right */
+"SpheroSimulator_AngleDescription_Right" = "右方";
+
+/* VoiceOver description of R2D2 detecting a collision. */
+"SpheroSimulator_CollisionMessage" = "R2D2 检测到碰撞";
+
+/* VoiceOver description for Sphero rolling */
+"SpheroSimulator_RollActionDescription" = "滚动";
+
+/* VoiceOver description for Sphero rolling quickly */
+"SpheroSimulator_RollQuicklyActionDescription" = "快速滚动";
+
+/* VoiceOver description for Sphero rolling slowly */
+"SpheroSimulator_RollSlowlyActionDescription" = "慢速滚动";
+
+/* VoiceOver description for R2D2 action. %1$@ is replaced with an action and %2$@ is replaced with a direction (e.g. R2D2 rolls quickly heading forward-left) */
+"SpheroSimulator_SpheroActionMessage" = "R2D2 朝着%2$@%1$@";
+
+/* VoiceOver description for R2D2 stopping */
+"SpheroSimulator_StopActionDescription" = "R2D2 停止";
+
+/* stormtrooper screen, image accessibility. image is of r2-d2 hiding in the hallway from a stormtrooper. */
+"stormtrooper.accessibility.label" = "R2D2 在死星的一个过道躲避冲锋队。";
+
+/* accessibility for accelerometer sensor view. %.0f is the acceleration the robot in g's. ie 1.4 g's */
+"template.accelSensor.accessibilityLabel" = "加速度计 %.1f g 力";
+
+/* value of accelerometer sensor readout, %.1f is the robots acceleration in g's. ie 1.4 g's */
+"template.accelSensor.sensorValue.text" = "%.1f g";
+
+/* accelerometer sensor title, accelerometer is how fast Sphero is accelerating */
+"template.accelSensor.titleLabel" = "加速度计";
+
+/* Connection view state -- connecting */
+"template.connection.view.connecting" = "正在连接机器人";
+
+/* Connection view state -- Robot cannot be used */
+"template.connection.view.firmwareoutofdate" = "连接至不同的机器人";
+
+/* Connection view state -- not connected */
+"template.connection.view.noConnection" = "连接机器人";
+
+/* Connection view state -- searching for robots */
+"template.connection.view.searching" = "正在搜索机器人";
+
+/* Connection view state -- selecting a robot */
+"template.connection.view.selecting" = "选择一个机器人";
+
+/* accessibility for gyro sensor view. %.0f is the robots rate of rotation in degrees per second, ie 500 °/s */
+"template.gyroSensor.accessibilityLabel" = "陀螺仪 %0.f 度/秒";
+
+/* value of the gyro sensor readout, %.0f is the robots rate of rotation in degrees per second, ie 500 °/s */
+"template.gyroSensor.sensorValue.text" = "%.0f °/秒";
+
+/* gyro sensor title, gyroscope is have fast Sphero is spinning */
+"template.gyroSensor.titleLabel" = "陀螺仪";
+
+/* accessibility for heading sensor view. %.0f is the direction the robot is heading in degrees. ie 130 degrees */
+"template.headingSensor.accessibilityLabel" = "前进方向 %0.f 度";
+
+/* value of heading sensor readout, %.0f is the robots heading in degrees, ° is the symbol for degrees. */
+"template.headingSensor.sensorValue.text" = "%.0f°";
+
+/* heading sensor title, heading is the direction Sphero is rolling */
+"template.headingSensor.titleLabel" = "前进方向";
+
+/* accessibility for velocity sensor view. %.1f is the robots speed in centimeters per second, ie 13 cm/s */
+"template.velocitySensor.accessibilityLabel" = "速度：%.1f 厘米/秒";
+
+/* velocity sensor title, velocity is how fast Sphero is rolling */
+"template.velocitySensor.titleLabel" = "速度";
+
+/* value of the velocity sensor readout, %.1f is the robots speed in centimeters per second, ie 13 cm/s */
+"template.velocitySesnor.sensorValue.text" = "%.1f 厘米/秒";
+
+/* Header above an aiming control used to turn a toy around. */
+"templateLiveViewController.aim.heading" = "瞄准";
+
+/* Header above a joystick used to drive around a toy. */
+"templateLiveViewController.drive.heading" = "驾驶";
+
+/* BB-8 robot */
+"toy.name.bb8" = "BB-8";
+
+/* BB-9E robot */
+"toy.name.bb9e" = "BB-9E";
+
+/* R2-D2 robot */
+"toy.name.r2d2" = "R2-D2";
+
+/* Generic Sphero robot */
+"toy.name.sphero" = "Sphero";
+
+/* SPRK+ robot */
+"toy.name.sprk" = "SPRK+";
+
+/* BOLT robot */
+"toy.name.bolt" = "BOLT";
+
+/* Mini robot */
+"toy.name.mini" = "Mini";
+
+/* image accessibility, image is of R2-D2 in the desert with shaky lines beside it indictating movement. */
+"waddle.accessibility.text" = "R2D2 在沙漠中来回行走以警告朋友们有危险。";
+

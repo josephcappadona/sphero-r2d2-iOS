@@ -1,0 +1,26 @@
+/* Title */
+
+"---TITLE---" = "Sphero 模板";
+
+/* Subtitle */
+
+"---SUBTITLE---" = "为 Sphero 机器人构建你自己的程序。";
+
+/* Publisher */
+
+"---PUBLISHER---" = "Sphero Inc.";
+
+/* Description */
+
+"---DESCRIPTION---" = "这是一个开放性模板，允许你为 Sphero 机器人构建你自己的程序。查看 Sphero API 文档，了解用于控制你机器人的命令列表。\n\n这个 Playground 需要使用 Sphero SPRK+、BB-8、R2-D2 或 BB-9E 机器人。";
+
+/* Languages available in */
+
+"---LANGUAGES---" = "英文、德文、法文、日文、简体中文和西班牙文（拉丁美洲）。";
+
+/* The following are the additional information labels used on the feed. */
+"---VERSION_LABEL---" = "版本：";
+"---RELEASED_LABEL---" = "发布：";
+"---EDITION_LABEL---" = "版本类别︰";
+"---LANGUAGES_LABEL---" = "语言：";
+"---DIFFICULTY_LABEL---" = "难度：";

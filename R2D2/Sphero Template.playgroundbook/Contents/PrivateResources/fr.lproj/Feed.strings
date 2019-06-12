@@ -1,0 +1,26 @@
+/* Title */
+
+"---TITLE---" = "Modèle Sphero";
+
+/* Subtitle */
+
+"---SUBTITLE---" = "Écris tes propres programmes avec un robot Sphero.";
+
+/* Publisher */
+
+"---PUBLISHER---" = "Sphero Inc.";
+
+/* Description */
+
+"---DESCRIPTION---" = "Un modèle libre qui te permet de créer tes propres programmes avec un robot Sphero. Pour avoir une liste de commandes te permettant de contrôler ton robot, consulte la documentation de Sphero sur l'API.\n\nPour réaliser ce playground, tu auras besoin d'un robot Sphero SPRK+, BB-8, R2-D2 ou BB-9E.";
+
+/* Languages available in */
+
+"---LANGUAGES---" = "Anglais, allemand, français, japonais, chinois simplifié et espagnol latino-américain.";
+
+/* The following are the additional information labels used on the feed. */
+"---VERSION_LABEL---" = "Version :";
+"---RELEASED_LABEL---" = "Date de sortie :";
+"---EDITION_LABEL---" = "Édition :";
+"---LANGUAGES_LABEL---" = "Langues :";
+"---DIFFICULTY_LABEL---" = "Difficulté :";

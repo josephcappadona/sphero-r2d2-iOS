@@ -1,0 +1,267 @@
+/* aiming modal accessibility. */
+"aiming.bodyLabel.accessibilityLabel" = "Si tu as du mal à orienter %@, touche Prêt(e). Observe la direction dans laquelle il va : son feu arrière bleu est dirigé à l'opposé de cette direction.";
+
+/* body text for aiming, turn Sphero until its small blue taillight is facing the user, \n newline for separating the two strings */
+"aiming.bodyLabel.text" = "Vérifie que le feu arrière bleu est face à toi !";
+
+/* accessibility hint describing what the ready button does. */
+"aiming.readyButton.accessibilityHint" = "Fait disparaître la fenêtre d'orientation et lance ton code.";
+
+/* button title; finished aiming and ready to run program. */
+"aiming.readyButton.text" = "Prêt(e)";
+
+/* aiming image accessiblity, image shows a small Sphero with a blue tail light facing away from an arrow and towards a pair of shoes */
+"aiming.spheroImage.accessibility" = "Une paire de chaussures se trouve derrière %@. Son feu arrière bleu est allumé et dirigé vers les chaussures et à l'opposé d'une flèche. La flèche indique la direction dans laquelle il va rouler.";
+
+/* title label for aiming */
+"aiming.titleLabel.text" = "Orienter %@";
+
+/* VoiceOver description of a circular aiming control, used to rotate their toy. */
+"aimingView.accessibilityDescription" = "Contrôle de l'orientation. Modifie l'orientation de base du robot.";
+
+/* Assessment hint when the toy disconnects unexpectedly while code is running. */
+"asessment.unexpectedDisconnect" = "R2-D2 est déconnecté ! Connecte R2-D2 et exécute ton code pour réessayer.";
+
+/* Instructions to update firmware */
+"connection.firmware.instructions" = "Télécharge [l'app Sphero Star Wars](x-playgrounds-launch-app://com.sphero.starwars?iTunesID=1243140524) et connecte ton droïde pour mettre son firmware à jour.";
+
+/* Instructions to update firmware */
+"connection.firmware.instructionsRobot" = "Télécharge l'[app Sphero Edu](x-playgrounds-launch-app://com.sphero.sprk?iTunesID=1017847674) et connecte ton robot pour mettre à jour son firmware.";
+
+/* Connection view state -- connecting */
+"connection.view.connecting" = "Connexion au droïde...";
+
+/* Connection view state -- Robot cannot be used */
+"connection.view.firmwareoutofdate" = "Connecte-toi à un autre droïde";
+
+/* Connection view state -- not connected */
+"connection.view.noConnection" = "Connecter un droïde";
+
+/* Connection view state -- searching for robots */
+"connection.view.searching" = "Recherche de droïdes...";
+
+/* Connection view state -- selecting a robot */
+"connection.view.selecting" = "Sélectionner un droïde";
+
+/* Name of unknown robot type */
+"connection.view.unknown" = "???";
+
+/* The first %@ is replaced with the type of toy (SPRK+, BB-8, R2-D2). The 2nd %@ is replaced with a command (setMainLed etc.). */
+"contentHelpers.unsupportedToyCommand" = "%1$@ ne prend pas en charge la commande %2$@.";
+
+/* '%@ is replaced with direction. ie Stormtrooper left can see R2D2. Sentence is brief as it is being read by voice over during gameplay */
+"deathStar.accessibility.detectedByStormtrooper" = "Le Stormtrooper %@ peut voir R2D2";
+
+/* %@ is replaced with a list of directions in which R2-D2 can move. */
+"deathStar.accessibility.movementDirectionList" = "Peut aller %@";
+
+/* %@ is replaced with a direction (Left, Right, Forward, etc). \"Progress\" as in progress through the death star. */
+"deathStar.accessibility.progressThroughMazeDirection" = "Pour avancer, va %@";
+
+/* No comment provided by engineer. */
+"deathStar.accessibility.r2d2Captured" = "R2D2 a été capturé par un Stormtrooper.";
+
+/* No comment provided by engineer. */
+"deathStar.accessibility.r2d2NearDoor" = "R2D2 est près d'une porte. Arrête-toi pour pirater la porte.";
+
+/* death star accessibility string. Description on how to control R2-d2 */
+"deathStar.accessibility.sceneDescription" = "R2D2 est dans l'Étoile noire. Touche deux fois, reste appuyé puis fais glisser tes doigts pour contrôler R2D2.";
+
+/* No comment provided by engineer. */
+"deathStar.accessibility.stopDescription" = "Arrêt";
+
+/* %@ is replaced with a direction (Forward, Left, etc), %d is replaced with a number. */
+"deathStar.accessibility.stormtrooperNearby" = "Le Stormtrooper est %1$@, à %2$d de distance.";
+
+/* ### is bold indicator, [] indicator that the text will be hyper linked, @(next) is URL link that is applied to [next page], localize 'Congratulations! \nYou successfully made it through this part of the Death Star!\nOn to the [next page]' */
+"deathStarMovement.assessment.pass" = "### Bravo ! \nTu as survécu à cette partie de l'Étoile noire !\nAllons à la [page suivante](@next).";
+
+/* final mission accessibility, image is of r2d2 rolling up the space ship's ramp to escape from the death star. */
+"finalMission.accessibility.label" = "R2D2 remonte la rampe du Faucon Millenium pour échapper à l'Étoile noire.";
+
+/* instructions for firmware update */
+"firmware.moreInfoLabel.text" = "Touche pour en savoir plus";
+
+/* firmware update. toy needs an update */
+"firmwareUpdate.bodyLabel.bb8Text" = "BB-8 doit être mis à jour";
+
+/* firmware update. toy needs an update */
+"firmwareUpdate.bodyLabel.bb9eText" = "BB-9E doit être mis à jour";
+
+/* firmware update. toy needs an update */
+"firmwareUpdate.bodyLabel.r2Text" = "R2-D2 doit être mis à jour";
+
+/* firmware update. toy needs an update */
+"firmwareUpdate.bodyLabel.sprkText" = "SPRK+ doit être mis à jour";
+
+/* firmware update. toy needs an update */
+"firmwareUpdate.bodyLabel.boltText" = "BOLT doit être mis à jour";
+
+/* firmware update. toy needs an update */
+"firmwareUpdate.bodyLabel.miniText" = "Mini doit être mis à jour";
+
+/* accessibility for BB-8 firmware update */
+"firmwareUpdate.image.bb8Accessibility" = "BB-8 doit être mis à jour : une flèche est dirigée vers le coin supérieur droit de l'écran pour indiquer où appuyer.";
+
+/* accessibility for bb9e firmware update */
+"firmwareUpdate.image.bb9eAccessibility" = "BB9E doit être mis à jour : une flèche est dirigée vers le coin supérieur droit de l'écran pour indiquer où appuyer.";
+
+/* accessibility for r2d2 firmware update */
+"firmwareUpdate.image.r2Accessibility" = "R2D2 doit être mis à jour : une flèche est dirigée vers le coin supérieur droit de l'écran pour indiquer où appuyer.";
+
+/* accessibility for sprk+ firmware update */
+"firmwareUpdate.image.sprkAccessibility" = "Sphero est triste, son antenne est de travers. Le robot doit être mis à jour. Une flèche est dirigée vers le coin supérieur droit de l'écran pour indiquer où appuyer.";
+
+/* hacking screen, image accessibility. image is of r2-d2 in front of a blast door. */
+"hacking.accessibility.label" = "R2D2 se trouve devant une porte anti-souffle de l'Étoile noire et essaie de pirater le code de la porte pour l'ouvrir.";
+
+/* image accessibility, image is of R2-D2 in a desert canyon. */
+"headSwivel.accessibility.text" = "R2D2 est dans un canyon désert.";
+
+/* VoiceOver description of a joystick. */
+"joystickView.accessibilityDescription" = "Joystick. Touche deux fois et reste appuyé pour guider ton robot.";
+
+/* image accessibility, image is of R2-D2 projecting a hologram of princess Leia */
+"lights.accessibility.image" = "R2D2 est dans la maison d'Obi-Wan Kenobi et projette l'hologramme de la Princesse Leia.";
+
+/* movement screen, image accessibility. image is of r2-d2 in a hanger bay by the Millennium Falcon. */
+"movement.accessibility.label" = "R2D2 est dans la baie hangar devant le Faucon Millenium.";
+
+/* Accessibility hint for R2D2 image in R2D2 simulator. */
+"R2Simulator_AccessibilitySpheroHint" = "R2D2";
+
+/* image accessibility for the roll screen */
+"roll.accessibility.label" = "R2D2 est dans un couloir devant une porte, prêt à partir.";
+
+/* scanning screen, image accessibility. image is of r2-d2 with its life form scanner (antenna from its dome) out. */
+"scanning.accessibility.label" = "R2-D2 est dans un couloir de l'Étoile noire et son détecteur de forme de vie pivote de chaque côté à la recherche de Stormtroopers.";
+
+/* VoiceOver description of Sphero simulator. */
+"SpheroSimulator_AccessibilityDescription" = "Une simulation de Sphero qui se déplace en fonction de ce que tu lui ordonnes.";
+
+/* VoiceOver description for Sphero heading Backward */
+"SpheroSimulator_AngleDescription_Backward" = "en arrière";
+
+/* VoiceOver description for Sphero heading Backward Left */
+"SpheroSimulator_AngleDescription_BackwardLeft" = "en arrière vers la gauche";
+
+/* VoiceOver description for Sphero heading Backward Right */
+"SpheroSimulator_AngleDescription_BackwardRight" = "en arrière vers la droite";
+
+/* VoiceOver description for Sphero heading Forward */
+"SpheroSimulator_AngleDescription_Forward" = "en avant";
+
+/* VoiceOver description for Sphero heading Forward Left */
+"SpheroSimulator_AngleDescription_ForwardLeft" = "en avant vers la gauche";
+
+/* VoiceOver description for Sphero heading Forward Right */
+"SpheroSimulator_AngleDescription_ForwardRight" = "en avant vers la droite";
+
+/* VoiceOver description for Sphero heading Left */
+"SpheroSimulator_AngleDescription_Left" = "à gauche";
+
+/* VoiceOver description for Sphero heading Right */
+"SpheroSimulator_AngleDescription_Right" = "à droite";
+
+/* VoiceOver description of R2D2 detecting a collision. */
+"SpheroSimulator_CollisionMessage" = "R2D2 a détecté une collision.";
+
+/* VoiceOver description for Sphero rolling */
+"SpheroSimulator_RollActionDescription" = "roule";
+
+/* VoiceOver description for Sphero rolling quickly */
+"SpheroSimulator_RollQuicklyActionDescription" = "roule rapidement";
+
+/* VoiceOver description for Sphero rolling slowly */
+"SpheroSimulator_RollSlowlyActionDescription" = "roule doucement";
+
+/* VoiceOver description for R2D2 action. %1$@ is replaced with an action and %2$@ is replaced with a direction (e.g. R2D2 rolls quickly heading forward-left) */
+"SpheroSimulator_SpheroActionMessage" = "R2D2 %1$@ %2$@.";
+
+/* VoiceOver description for R2D2 stopping */
+"SpheroSimulator_StopActionDescription" = "R2D2 s'arrête.";
+
+/* stormtrooper screen, image accessibility. image is of r2-d2 hiding in the hallway from a stormtrooper. */
+"stormtrooper.accessibility.label" = "R2D2 est dans un couloir de l'Étoile noire et se cache pour ne pas être vu par un Stormtrooper.";
+
+/* accessibility for accelerometer sensor view. %.0f is the acceleration the robot in g's. ie 1.4 g's */
+"template.accelSensor.accessibilityLabel" = "Accéléromètre. %.1f force g";
+
+/* value of accelerometer sensor readout, %.1f is the robots acceleration in g's. ie 1.4 g's */
+"template.accelSensor.sensorValue.text" = "%.1f g";
+
+/* accelerometer sensor title, accelerometer is how fast Sphero is accelerating */
+"template.accelSensor.titleLabel" = "Accéléromètre";
+
+/* Connection view state -- connecting */
+"template.connection.view.connecting" = "Connexion au robot...";
+
+/* Connection view state -- Robot cannot be used */
+"template.connection.view.firmwareoutofdate" = "Connecter un autre robot";
+
+/* Connection view state -- not connected */
+"template.connection.view.noConnection" = "Connecter le robot";
+
+/* Connection view state -- searching for robots */
+"template.connection.view.searching" = "Recherche de robots...";
+
+/* Connection view state -- selecting a robot */
+"template.connection.view.selecting" = "Sélectionner un robot";
+
+/* accessibility for gyro sensor view. %.0f is the robots rate of rotation in degrees per second, ie 500 °/s */
+"template.gyroSensor.accessibilityLabel" = "Gyroscope. %0.f degrés par seconde";
+
+/* value of the gyro sensor readout, %.0f is the robots rate of rotation in degrees per second, ie 500 °/s */
+"template.gyroSensor.sensorValue.text" = "%.0f °/s";
+
+/* gyro sensor title, gyroscope is have fast Sphero is spinning */
+"template.gyroSensor.titleLabel" = "Gyroscope";
+
+/* accessibility for heading sensor view. %.0f is the direction the robot is heading in degrees. ie 130 degrees */
+"template.headingSensor.accessibilityLabel" = "Direction. %0.f degrés";
+
+/* value of heading sensor readout, %.0f is the robots heading in degrees, ° is the symbol for degrees. */
+"template.headingSensor.sensorValue.text" = "%.0f°";
+
+/* heading sensor title, heading is the direction Sphero is rolling */
+"template.headingSensor.titleLabel" = "Direction";
+
+/* accessibility for velocity sensor view. %.1f is the robots speed in centimeters per second, ie 13 cm/s */
+"template.velocitySensor.accessibilityLabel" = "Vitesse. %.1f centimètres par seconde";
+
+/* velocity sensor title, velocity is how fast Sphero is rolling */
+"template.velocitySensor.titleLabel" = "Vitesse";
+
+/* value of the velocity sensor readout, %.1f is the robots speed in centimeters per second, ie 13 cm/s */
+"template.velocitySesnor.sensorValue.text" = "%.1f cm/s";
+
+/* Header above an aiming control used to turn a toy around. */
+"templateLiveViewController.aim.heading" = "Orientation";
+
+/* Header above a joystick used to drive around a toy. */
+"templateLiveViewController.drive.heading" = "Guidage";
+
+/* BB-8 robot */
+"toy.name.bb8" = "BB-8";
+
+/* BB-9E robot */
+"toy.name.bb9e" = "BB-9E";
+
+/* R2-D2 robot */
+"toy.name.r2d2" = "R2-D2";
+
+/* Generic Sphero robot */
+"toy.name.sphero" = "Sphero";
+
+/* SPRK+ robot */
+"toy.name.sprk" = "SPRK+";
+
+/* BOLT robot */
+"toy.name.bolt" = "BOLT";
+
+/* Mini robot */
+"toy.name.mini" = "Mini";
+
+/* image accessibility, image is of R2-D2 in the desert with shaky lines beside it indictating movement. */
+"waddle.accessibility.text" = "R2D2 est dans le désert et se dandine pour alerter ses amis d'un danger.";
+

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>sd:SpheroPong_ScoreboardAccessibilityMessage</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>记分板显示玩家 1%1 的得分为 %1$#@d_points@，玩家 2 的得分为 %2$#@d_points@</string>
+		<key>d_points</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>%d point</string>
+			<key>other</key>
+			<string>%d points</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

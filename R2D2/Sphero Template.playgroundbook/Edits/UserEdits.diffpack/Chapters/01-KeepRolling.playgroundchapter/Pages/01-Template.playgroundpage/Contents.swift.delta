@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{2554, 2}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{2554, 0}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>    //setStance(R2D2Stance.tripod)
+    setFrontPSILed(color: FrontPSIColor.blue)
+    setBackPSILed(color: BackPSIColor.green)
+    
+    //setFrontPsiLed({ r: getRandomInt(0, 255), g: getRandomInt(0, 255), b: getRandomInt(0, 255) })
+    
+    playAnimation(R2D2Animations.no)
+    wait(for: 5)
+    play(sound: R2D2Sound.happy)
+    
+    
+    
+    
+    //setStance(R2D2Stance.waddle)
+    //wait(for: 3)
+    
+    
+    playAnimation(R2D2Animations.laugh)
+    rollInSquare()
+    rollInSquare()
+
+    
+    //wait(for: 2)
+    //scan()
+
+}
+
+func rollInSquare() {
+</string>
+			<key>ModifiedRange</key>
+			<string>{2672, 549}</string>
+			<key>OriginalContent</key>
+			<string>    
+</string>
+			<key>OriginalRange</key>
+			<string>{2670, 5}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>fo</string>
+			<key>ModifiedRange</key>
+			<string>{3277, 2}</string>
+			<key>OriginalContent</key>
+			<string>while (t</string>
+			<key>OriginalRange</key>
+			<string>{2731, 8}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string> i in 0...4</string>
+			<key>ModifiedRange</key>
+			<string>{3280, 11}</string>
+			<key>OriginalContent</key>
+			<string>ue)</string>
+			<key>OriginalRange</key>
+			<string>{2740, 3}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>1 </string>
+			<key>ModifiedRange</key>
+			<string>{3371, 2}</string>
+			<key>OriginalContent</key>
+			<string>2.0</string>
+			<key>OriginalRange</key>
+			<string>{2823, 3}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>func escape() {
+    setStance(R2D2Stance.tripod)
+    roll(heading: 0, speed: 80)
+    wait(for: 3)
+    stopRoll()
+    play(sound:R2D2Sound.happy)
+}
+
+func scan() {
+    for i in 0...3 {
+        play(sound:R2D2Sound.cautious)
+        wait(for: 1.0)
+        setDomePosition(angle: 100)
+        wait(for: 1.0)
+        play(sound:R2D2Sound.joyful)
+        wait(for: 1.0)
+        setDomePosition(angle: -100)
+        wait(for: 1.0)
+    }
+    setDomePosition(angle: 0)
+}
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{3525, 464}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{2978, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/01-KeepRolling.playgroundchapter/Pages/01-Template.playgroundpage/Contents.swift</string>
+</dict>
+</plist>
