@@ -78,7 +78,7 @@ public final class ToyBox {
     }
     
     public func removeListener(_ listener: ToyBoxListener) {
-        guard let index = listeners.index(where: {$0 === listener }) else { return }
+        guard let index = listeners.firstIndex(where: {$0 === listener }) else { return }
         listeners.remove(at: index)
     }
     
@@ -186,6 +186,9 @@ public final class ToyBox {
             toy = BB9EToy(peripheral: peripheral, owner: self)
             
         case let r2d2 where (r2d2.hasPrefix(R2D2Toy.descriptor)):
+            toy = R2D2Toy(peripheral: peripheral, owner: self)
+        
+        case let r2q5 where (r2q5.hasPrefix("Q5-")):
             toy = R2D2Toy(peripheral: peripheral, owner: self)
             
         default:

@@ -493,6 +493,19 @@ public struct PlaySoundCommand: UserIOCommand {
     }
     
     public enum DroidSound: UInt16 {
+        case test = 0
+        case test1 = 1
+        case test2 = 2
+        case test3 = 3
+        case test4 = 4
+        case test5 = 5
+        case test6 = 6
+        case test7 = 7
+        case test8 = 8
+        case test9 = 9
+        case test10 = 10
+        case test11 = 11
+        case test12 = 12
         case cheerful = 3438
         case joyful = 3460
         case happy = 3410

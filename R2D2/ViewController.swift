@@ -11,6 +11,8 @@ import CoreBluetooth
 
 class ViewController: UIViewController {
     
+    var appDelegate: AppDelegate?
+    
     let cellReuseIdentifier = "AvailableConnectionCell"
     @IBOutlet weak var availableConnectionsTableView: UITableView!
     @IBOutlet weak var discoveryButton: UIButton!
@@ -29,11 +31,27 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupToybox()
+        
+        appDelegate = UIApplication.shared.delegate as? AppDelegate
+        toyBox = appDelegate?.globalToyBox
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        setupToybox()
+        resetConnectedToyObjects()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        toyBox?.removeListener(self)
+    }
+    
+    func setupToybox() {
+        toyBox?.addListener(self)
+    }
+    
+    func resetConnectedToyObjects() {
         if (connectedToy != nil) {
             connectedToy = nil
             connectedAnyToy = nil
@@ -41,11 +59,6 @@ class ViewController: UIViewController {
             readyingToyDescriptor = nil
             roller = nil
         }
-    }
-    
-    func setupToybox() {
-        toyBox = ToyBox()
-        toyBox?.addListener(self)
     }
     
     func startScanning() {
@@ -81,10 +94,7 @@ class ViewController: UIViewController {
             let destination = segue.destination as! ConnectedViewController
             destination.delegate = self
             destination.toyBox = toyBox
-            //destination.toy = connectedToy
-            //destination.anyToy = connectedAnyToy
             destination.descriptor = readyingToyDescriptor
-            //destination.roller = roller
         }
     }
 }
@@ -95,7 +105,6 @@ extension ViewController: ToyBoxListener {
     }
     
     public func toyBox(_ toyBox: ToyBox, discovered descriptor: ToyDescriptor) {
-        //print("discovered droid: \(descriptor.name!)   \(descriptor.rssi!)")
         discoveredDescriptors.remove(descriptor)
         discoveredDescriptors.insert(descriptor)
         descriptorToRSSI[descriptor] = descriptor.rssi!
@@ -107,97 +116,9 @@ extension ViewController: ToyBoxListener {
     }
     
     public func toyBox(_ toyBox: ToyBox, readied toy: Toy) {
-        /*
-        print("readied toy")
-        guard let peripheral = toy.peripheral else { return }
-        let anyToy = AnyToy(toy: toy)
-        
-        connectedToy = toy
-        connectedToyDescriptor = readyingToyDescriptor
-        roller = RobotKeepAlive(toy: anyToy)
-        
-        if let batteryLevel = connectedToy?.batteryLevel {
-            //toyConnectionView?.setBatteryLevel(batteryLevel, forPeripheral: peripheral)
-            print("battery level: \(batteryLevel)")
-        }
-        
-        toy.setToyOptions([.EnableMotionTimeout])
-        
-        if toy is BoltToy {
-            anyToy.setFrontLed(color: .black)
-            anyToy.setBackLed(color: .black)
-            anyToy.setMatrix(rotation: .deg0)
-        }
-        
-        anyToy.setMainLed(color: UIColor(red: 0.0/255.0, green: 133.0/255.0, blue: 202.0/255.0, alpha: 1.0))
-        
-        anyToy.onCollisionDetected = { [weak self] data in
-            //self?.sendCollisionMessage(data: data)
-            //self?.didReceiveCollision(data: data)
-        }
-        
-        anyToy.sensorControl?.onDataReady = { [weak self] data in
-            //self?.sendSensorDataMessage(data: data)
-            //self?.didReceiveSensorData(data)
-        }
-        
-        anyToy.sensorControl?.onFreefallDetected = { [weak self] in
-            //self?.sendFreefallMessage()
-            //self?.toyDidFreefall()
-        }
-        
-        anyToy.sensorControl?.onLandingDetected = { [weak self] in
-            //self?.sendLandMessage()
-            //self?.toyDidLand()
-        }
-        
-        anyToy.onBatteryUpdated = { [weak self] batteryVoltageLevel in
-            if let batteryLevel = batteryVoltageLevel, let peripheral = self?.connectedToy?.peripheral {
-                //self?.toyConnectionView?.setBatteryLevel(batteryLevel, forPeripheral: peripheral)
-            }
-        }
-        
-        if toy is R2D2Toy {
-            anyToy.setAudioVolume(128)
-            anyToy.setStanceChangedNotifications(enabled: true)
-            //anyToy.setStance(.tripod)
-            //anyToy.setStance(.bipod)
-        }
-        
-        //start up a timer to read our battery every once in a while
-        /*if let batteryTimer = batteryTimer {
-            batteryTimer.invalidate()
-            self.batteryTimer = nil
-        }
-        
-        batteryTimer = Timer.scheduledTimer(withTimeInterval: 60, repeats: true, block: { [weak self] timer in
-            self?.connectedToy?.getPowerState()
-        })
-        
-        if isLiveViewMessageConnectionOpened {
-            sendToyReadyMessage()
-        }*/
-        performSegue(withIdentifier: "ShowConnectedViewController", sender: self)
-        */
     }
     
     public func toyBox(_ toyBox: ToyBox, putAway toy: Toy) {
-        print("put away toy")
-        guard toy === connectedAnyToy?.toy else { return }
-        
-        connectedToy = nil
-        roller = nil
-        
-        //batteryTimer?.invalidate()
-        //batteryTimer = nil
-        
-        //hideModalViewControllers()
-        
-        /*sendMessageToContents(
-            .dictionary([
-                MessageKeys.type: MessageTypeId.didDisconnect.playgroundValue()
-                ])
-        )*/
     }
 }
 
@@ -212,6 +133,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.nameLabel.text = descriptor.name
         cell.uuidLabel.text = descriptor.identifier.uuidString
         cell.rssiLabel.text = String(descriptor.rssi!)
+        
         return cell
     }
     
@@ -220,7 +142,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let descriptor = discoveredDescriptorsByRSSI[indexPath.row]
         readyingToyDescriptor = descriptor
         performSegue(withIdentifier: "ShowConnectedViewController", sender: self)
-        //connect(descriptor: descriptor)
     }
 }
 
