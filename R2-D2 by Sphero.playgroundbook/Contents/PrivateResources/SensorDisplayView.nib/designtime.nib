@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SensorDisplayView">
+            <connections>
+                <outlet property="leadingSensorValueConstraint" destination="RHi-5o-RKv" id="Ds2-hm-yIa"/>
+                <outlet property="pillView" destination="ZKq-Ig-Agt" id="VUq-y0-dy4"/>
+                <outlet property="pillViewWidthMinimumWidthConstraint" destination="Mfb-sW-MgM" id="dR9-ma-jR0"/>
+                <outlet property="sensorValueLabel" destination="aoi-xC-ByD" id="Vuy-aG-aRb"/>
+                <outlet property="stackView" destination="mon-lB-BmR" id="uxA-2v-4ER"/>
+                <outlet property="titleLabel" destination="yTh-Ia-0MW" id="Y0g-hG-JBa"/>
+                <outlet property="trailingSensorValueConstraint" destination="YNS-4A-4id" id="Qqn-W2-lds"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="86"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mon-lB-BmR">
+                    <rect key="frame" x="0.0" y="0.0" width="333" height="86"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="!LABEL" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" autoshrinkMode="minimumScaleFactor" translatesAutoresizingMaskIntoConstraints="NO" id="yTh-Ia-0MW" customClass="SpacedLabel">
+                            <rect key="frame" x="0.0" y="32.5" width="173" height="21.5"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <bool key="isElement" value="NO"/>
+                            </accessibility>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="characterSpacing">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" horizontalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="nkI-l2-8cz">
+                            <rect key="frame" x="183" y="30" width="150" height="26"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" horizontalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="ZKq-Ig-Agt">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="26"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Mfb-sW-MgM"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoi-xC-ByD">
+                                    <rect key="frame" x="30" y="0.0" width="90" height="26"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <bool key="isElement" value="NO"/>
+                                    </accessibility>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="ZKq-Ig-Agt" secondAttribute="bottom" id="6Sx-si-B19"/>
+                                <constraint firstAttribute="height" constant="26" id="Ayi-KX-u6M"/>
+                                <constraint firstItem="ZKq-Ig-Agt" firstAttribute="top" secondItem="nkI-l2-8cz" secondAttribute="top" id="Ikv-AK-y5X"/>
+                                <constraint firstAttribute="trailing" secondItem="ZKq-Ig-Agt" secondAttribute="trailing" id="KhP-Dt-wDZ"/>
+                                <constraint firstItem="aoi-xC-ByD" firstAttribute="leading" secondItem="nkI-l2-8cz" secondAttribute="leading" constant="30" id="RHi-5o-RKv"/>
+                                <constraint firstAttribute="bottom" secondItem="aoi-xC-ByD" secondAttribute="bottom" id="RyH-NB-wNI"/>
+                                <constraint firstAttribute="trailing" secondItem="aoi-xC-ByD" secondAttribute="trailing" constant="30" id="YNS-4A-4id"/>
+                                <constraint firstItem="ZKq-Ig-Agt" firstAttribute="leading" secondItem="nkI-l2-8cz" secondAttribute="leading" id="h2Q-E4-Zaj"/>
+                                <constraint firstItem="aoi-xC-ByD" firstAttribute="top" secondItem="nkI-l2-8cz" secondAttribute="top" id="wFV-C2-myp"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="mon-lB-BmR" secondAttribute="bottom" id="HwE-7X-xck"/>
+                <constraint firstItem="mon-lB-BmR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Pk5-nb-ugR"/>
+                <constraint firstAttribute="trailing" secondItem="mon-lB-BmR" secondAttribute="trailing" id="saS-Qc-zci"/>
+                <constraint firstItem="mon-lB-BmR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yXY-RR-oVQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="53.5" y="-237"/>
+        </view>
+    </objects>
+</document>

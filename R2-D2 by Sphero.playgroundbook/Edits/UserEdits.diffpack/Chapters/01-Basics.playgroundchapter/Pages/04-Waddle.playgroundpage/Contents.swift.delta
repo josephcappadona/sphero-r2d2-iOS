@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>    setStance(R2D2Stance.waddle)
+    wait(for: 3)
+    setStance(R2D2Stance.stop)
+    play(sound: R2D2Sound.scared)
+</string>
+			<key>ModifiedRange</key>
+			<string>{1202, 115}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{1202, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/01-Basics.playgroundchapter/Pages/04-Waddle.playgroundpage/Contents.swift</string>
+</dict>
+</plist>

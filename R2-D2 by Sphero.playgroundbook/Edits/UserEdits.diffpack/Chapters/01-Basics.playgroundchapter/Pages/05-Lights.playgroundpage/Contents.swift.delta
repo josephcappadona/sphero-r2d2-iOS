@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>    setFrontPSILed(color: FrontPSIColor.red)
+    setBackPSILed(color: BackPSIColor.yellow)
+    
+    play(sound: R2D2Sound.talking)
+    
+    for i in 1 ... 4 {
+        flashLights()
+
+    }
+</string>
+			<key>ModifiedRange</key>
+			<string>{1522, 188}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1522, 0}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>    setHoloProjectorLed(brightness: 100)
+    setLogicDisplayLeds(brightness: 100)
+    wait(for: 1)
+    setHoloProjectorLed(brightness: 0)
+    setLogicDisplayLeds(brightness: 0)
+    wait(for: 1)
+    
+</string>
+			<key>ModifiedRange</key>
+			<string>{1753, 199}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{1565, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/01-Basics.playgroundchapter/Pages/05-Lights.playgroundpage/Contents.swift</string>
+</dict>
+</plist>

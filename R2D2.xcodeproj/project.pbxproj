@@ -15,6 +15,7 @@
 		6952376422AA3EB1002FDBA5 /* ToyBoxWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6952376322AA3EB1002FDBA5 /* ToyBoxWrapper.swift */; };
 		6952376622AA3F3C002FDBA5 /* ToyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6952376522AA3F3C002FDBA5 /* ToyWrapper.swift */; };
 		6952376822AA74BE002FDBA5 /* ConnectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6952376722AA74BE002FDBA5 /* ConnectedViewController.swift */; };
+		697E869222CBE62F00A91D01 /* R2-D2 by Sphero.playgroundbook in Resources */ = {isa = PBXBuildFile; fileRef = 697E869122CBE62E00A91D01 /* R2-D2 by Sphero.playgroundbook */; };
 		69D46188229B825A0055F701 /* Color+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D46187229B825A0055F701 /* Color+Utils.swift */; };
 		69D4618A229B828D0055F701 /* AnyToy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D46189229B828D0055F701 /* AnyToy.swift */; };
 		69D4618E229B82AD0055F701 /* Double+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4618D229B82AD0055F701 /* Double+Utils.swift */; };
@@ -67,6 +68,7 @@
 		6952376322AA3EB1002FDBA5 /* ToyBoxWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyBoxWrapper.swift; sourceTree = "<group>"; };
 		6952376522AA3F3C002FDBA5 /* ToyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyWrapper.swift; sourceTree = "<group>"; };
 		6952376722AA74BE002FDBA5 /* ConnectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedViewController.swift; sourceTree = "<group>"; };
+		697E869122CBE62E00A91D01 /* R2-D2 by Sphero.playgroundbook */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "R2-D2 by Sphero.playgroundbook"; sourceTree = "<group>"; };
 		69D46187229B825A0055F701 /* Color+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Utils.swift"; sourceTree = "<group>"; };
 		69D46189229B828D0055F701 /* AnyToy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyToy.swift; sourceTree = "<group>"; };
 		69D4618D229B82AD0055F701 /* Double+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Utils.swift"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				691B21B5228D2AB100A12397 /* R2D2 */,
+				697E869122CBE62E00A91D01 /* R2-D2 by Sphero.playgroundbook */,
 				691B21B4228D2AB100A12397 /* Products */,
 				E8BCFD6E10199D216DD8C297 /* Pods */,
 			);
@@ -339,6 +342,7 @@
 				691B21C1228D2AB200A12397 /* LaunchScreen.storyboard in Resources */,
 				69F6E79B228D3445007867FF /* Sphero Template.playgroundbook in Resources */,
 				691B21BE228D2AB200A12397 /* Assets.xcassets in Resources */,
+				697E869222CBE62F00A91D01 /* R2-D2 by Sphero.playgroundbook in Resources */,
 				691B21BC228D2AB100A12397 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

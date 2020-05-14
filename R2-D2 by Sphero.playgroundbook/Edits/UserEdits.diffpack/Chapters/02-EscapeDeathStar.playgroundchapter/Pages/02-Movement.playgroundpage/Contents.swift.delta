@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>        if angle &gt; angleThreshold {
+            turnLeft()
+        } else if angle &lt; -1 * angleThreshold {
+            turnRight()
+        } else {
+            moveForward()
+        }
+</string>
+			<key>ModifiedRange</key>
+			<string>{1857, 184}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{1857, 1}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>    
+</string>
+			<key>ModifiedRange</key>
+			<string>{2047, 5}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1864, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/02-EscapeDeathStar.playgroundchapter/Pages/02-Movement.playgroundpage/Contents.swift</string>
+</dict>
+</plist>

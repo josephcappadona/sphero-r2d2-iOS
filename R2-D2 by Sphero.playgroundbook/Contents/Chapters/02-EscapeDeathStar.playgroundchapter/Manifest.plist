@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Pages</key>
+	<array>
+		<string>01-DeathStar.cutscenepage</string>
+		<string>02-Movement.playgroundpage</string>
+		<string>03-StormtrooperWarning.playgroundpage</string>
+		<string>04-LifeFormScanner.playgroundpage</string>
+		<string>05-Hack.playgroundpage</string>
+		<string>06-Escape.playgroundpage</string>
+		<string>07-Congrats.cutscenepage</string>
+	</array>
+	<key>Name</key>
+	<string>name</string>
+</dict>
+</plist>
